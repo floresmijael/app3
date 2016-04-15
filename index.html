@@ -1,0 +1,240 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/popo3.jpg','imagenes/colima2.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="a">
+<h1>Volcanes en México</h1>
+</div>
+<div data-role="main" class="ui-content">
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:155px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcan Popocatépetl</h2>
+<p>Informacion sobre el Volcan Popocatépetl</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcán de Colima o volcán de Fuego</h2>
+<p>Informacion sobre el Volcan de Fuego</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas de Prevención en caso de caida de ceniza</h2>
+<p>Medidas de Prevención</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas de Prevención en caso de Erupcion</h2>
+<p>Medidas de Prevención </p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <h4>Aplicacion Tres  </h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>MFC</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Volcan Popocatépetl</h1>
+ 
+  </div>
+  <div data-role="content" >
+  <div>
+  <div>
+ <center>   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/popo3.jpg',1)"><img src="imagenes/popo1.jpg" width="270" height="256" id="Image21"></a></center>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+ <br>
+<h1>Ubicación</h1>
+  <div>
+   <p>Es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+  <center><img src="imagenes/ubicacion.jpg" width="265" height="180"></center>
+  </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Dimenciones</h1>
+  <div>
+<p> Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.</p>
+<p>Cubre una superficie de 283,129.53 hectareas</p>
+<p>Posee un crater eliptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diametro mayor de 900 metros y un ancho totalde 400 * 600 metros.
+<center><img src="imagenes/popo4.jpg" width="260" height="179"></center>
+  </div>
+  </div>
+   <div data-role="collapsible" data-content-theme="false">
+<h1>Dependencias que lo Monitorean</h1>
+  <div>
+  <b>CENAPRED</b>(Centro Nacional de Prevención de Desastres)
+ <p> <b>Clic en la imagen para ir al sitio oficial</b></p>
+  <center><a href="http://cenapred.gob.mx:8080/monitoreoPopocatepetl/"><img src="imagenes/cenapred.jpg"></a></center>	
+<p>La responsabilidad principal del Centro Nacional de Prevención de Desastres (CENAPRED) consiste en apoyar al Sistema Nacional de Protección Civil (SINAPROC) en los requerimientos técnicos que su operación demanda.</p>
+<p>La información publicada en esta sección es el resultado del monitoreo del volcán Popocatépetl que se realiza conjuntamente con la Universidad Nacional Autónoma de México. 
+</p>
+<p>El reporte se publica diariamente a las 11 de la mañana; en éste se resume la actividad registrada durante las últimas 24 horas, esto es, de 10 de la mañana del día anterior a 10 de la mañana del día en curso. En caso de que ocurra un evento extraordinario se reportará de forma inmediata.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres  </h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>MFC</h4>
+  </div>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Volcan de Fuego</h1>
+ </div>
+<div data-role="content">
+ <div>
+ <div>
+<center>   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/colima2.jpg',1)"><img src="imagenes/colima1.jpg" width="298" height="274" id="Image19"></a></center>
+</div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Ubicación</h1>
+  <div>
+ <p> El volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México</p>
+  <center><img src="imagenes/colima.jpg" width="303" height="217"></center>
+  </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Dimenciones</h1>
+  <div>
+ El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.
+ <center><img src="imagenes/colima4.jpg" width="260" height="179"></center>
+  </div>
+  </div>
+   <div data-role="collapsible" data-content-theme="false">
+<h1>Dependencias que lo Monitorean</h1>
+  <div>
+  <b>CENAPRED</b>(Centro Nacional de Prevención de Desastres)
+  <p>Clic en la imagen para ir al sitio oficial de CENAPRED</p>
+  <center><a href="http://www.cenapred.unam.mx/es/"><img src="imagenes/cenapred.jpg"></a></center>	
+<p>La responsabilidad principal del Centro Nacional de Prevención de Desastres (CENAPRED) consiste en apoyar al Sistema Nacional de Protección Civil (SINAPROC) en los requerimientos técnicos que su operación demanda.</p>
+<p>Prevenir, alertar y fomentar la cultura de autoprotección para reducir el riesgo de la población ante fenómenos naturales y antropogénicos que amenacen sus vidas, bienes y entorno, a través de la investigación, monitoreo, capacitación y difusión.</p>
+  </div>
+  </div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres  </h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>MFC</h4>
+ </div>
+ </div>
+</div>
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Prevención</h1>
+ </div>
+ <div data-role="content" >
+ <div>
+<b>RECOMENDACIONES EN CASO DE CAÍDA DE CENIZA VOLCÁNICA</b>
+<p>No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado</p>
+<p>Mantén la calma.</p>
+<p>Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.</p>
+<p>No realices actividades al aire libre y si es posible no salgas.</p>
+<p>Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.</p>
+<p>Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.</p>
+<p>Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.</p>
+<p>Ten a la mano una linterna y pilas.</p>
+<p>La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.</p>
+<p>Cubre tinacos, cisternas y depósitos de agua.</p>
+<p>Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.</p>
+<p>Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.</p>
+<p>Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.</p>
+<p>Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.</p>
+<p>Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.</p>
+<p>Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.</p>
+<p>La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.</p>
+<p>Usa las vías de comunicación solo en caso de ser necesario.</p>
+<center><img src="imagenes/ceniza.jpg"></center>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+  <h4>Aplicacion Tres  </h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>MFC</h4>
+ </div>
+ </div>
+ </div>
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Medidas de prevencion en caso de Erupcion Volcanica</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <b>Durante una erupción volcánica</b>
+<p>Si un volcán entra en erupción en su zona:</p>
+<p>Proceda inmediatamente a la evacuación para evitar los escombros volantes, gases calientes, explosiones laterales y corrientes de lava.</p>
+<p>Tenga cuidado con los flujos de lodo. El daño que estos flujos pueden provocar aumenta con las lluvias persistentes y se mueven con más rápido de lo que nosotros podemos andar o correr. Mire corriente arriba cuando vaya a cruzar un puente y nunca lo cruce si se aproxima un flujo de lodo. </p>
+<p>Use ropa que le cubra todo el cuerpo para proteger la piel</p>
+<p>Use gafas y mascarilla o un paño húmedo para facilitar la respiración</p>
+<p><b>Si se queda atrapado dentro de su hogar:</b><p>
+<p>Cierre ventanas, puertas y toda abertura al exterior</p>
+<p>Asegúrese de que los animales se encuentran bajo un refugio cubierto</p>
+<p><b>Si se queda atrapado en el exterior:</b></p>
+<p>Busque refugio bajo techo</p>
+<p>Evite áreas bajas donde los flujos de lodo pueden ser más peligrosos</p>
+<center><img src="imagenes/volcan.jpg"></center>
+</div>
+</div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres  </h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>MFC</h4>
+ </div>
+ </div>
+ </div>
+ </body>
+ </html>
